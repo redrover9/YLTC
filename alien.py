@@ -8,7 +8,7 @@ class Alien(Sprite):
         self.screen = si_game.screen
         self.settings = si_game.settings
 
-        self.image = pygame.image.load("/Users/grace/Downloads/space_invaders/YLTC/images/alien.bmp")
+        self.image = pygame.image.load("images/alien.bmp")
         self.rect = self.image.get_rect()
 
         self.rect.x = self.rect.width
