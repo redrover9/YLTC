@@ -20,9 +20,9 @@ class Settings:
         self.initialize_dynamic_settings()
 
     def initialize_dynamic_settings(self):
-        self.ship_speed = 0.75
-        self.bullet_speed = 1.0
-        self.alien_speed = 0.5
+        self.ship_speed = 2.0
+        self.bullet_speed = 3.0
+        self.alien_speed = 1.5
         self.fleet_direction = 1
         self.alien_points = 50
     def increase_speed(self):
