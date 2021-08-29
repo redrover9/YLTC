@@ -133,9 +133,9 @@ class SpaceInvaders:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
         elif event.key == pygame.K_UP:
-            self.sprite.moving_up = True
+            self.ship.moving_up = True
         elif event.key == pygame.K_DOWN:
-             self.sprite.moving_down = True
+             self.ship.moving_down = True
 
         elif event.key == pygame.K_q:
             sys.exit()
@@ -148,9 +148,9 @@ class SpaceInvaders:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = False
         elif event.key == pygame.K_UP:
-            self.sprite.moving_up = False
+            self.ship.moving_up = False
         elif event.key == pygame.K_DOWN:
-            self.sprite.moving_down = False
+            self.ship.moving_down = False
 
     def _fire_bullet(self):
         if len(self.bullets) < self.settings.bullets_allowed:

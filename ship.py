@@ -30,7 +30,7 @@ class Ship(Sprite):
         if self.moving_up and self.rect.top > 0:
             self.y -= self.settings.ship_speed
         if self.moving_down and self.rect.bottom < self.screen_rect.bottom:
-            self.y -= self.settings.ship_speed
+            self.y += self.settings.ship_speed
         self.rect.x = self.x
         self.rect.y = self.y
     def blitme(self):
