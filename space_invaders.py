@@ -23,6 +23,7 @@ class SpaceInvaders:
     def __init__(self):
         pygame.init()
         pygame.mixer.init()
+        pygame.mixer.music.set_volume(0.03)
         pygame.mixer.music.load("music/song.ogg")
         pygame.mixer.music.play(-1)
 
@@ -131,6 +132,11 @@ class SpaceInvaders:
             self.ship.moving_right = True
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
+        elif event.key == pygame.K_UP
+            self.sprite.moving_up = True
+        elif event.key == pygame.K_DOWN:
+             self.sprite.moving_down = True
+
         elif event.key == pygame.K_q:
             sys.exit()
         elif event.key == pygame.K_SPACE:
@@ -141,6 +147,10 @@ class SpaceInvaders:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = False
+        elif event.key == pygame.K_UP:
+            self.sprite.moving_up = False
+        elif event.key == pygame.K_DOWN:
+            self.sprite.moving_down = False
 
     def _fire_bullet(self):
         if len(self.bullets) < self.settings.bullets_allowed:
