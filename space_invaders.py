@@ -132,7 +132,7 @@ class SpaceInvaders:
             self.ship.moving_right = True
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
-        elif event.key == pygame.K_UP
+        elif event.key == pygame.K_UP:
             self.sprite.moving_up = True
         elif event.key == pygame.K_DOWN:
              self.sprite.moving_down = True
